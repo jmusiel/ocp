@@ -9,7 +9,7 @@ from abc import ABC, abstractmethod
 
 import torch
 import wandb
-from torch.utils.tensorboard import SummaryWriter
+# from torch.utils.tensorboard import SummaryWriter
 
 from ocpmodels.common.registry import registry
 

@@ -212,9 +212,10 @@ class Registry:
             existing_cls_path = "ocpmodels.trainers.ForcesTrainer"
 
         existing_keys = [f"'{name}'" for name in existing_keys]
-        existing_keys = (
-            ", ".join(existing_keys[:-1]) + " or " + existing_keys[-1]
-        )
+        if existing_keys:
+            existing_keys = (
+                ", ".join(existing_keys[:-1]) + " or " + existing_keys[-1]
+            )
         existing_keys_str = (
             f" (one of {existing_keys})" if existing_keys else ""
         )

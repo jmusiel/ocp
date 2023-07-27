@@ -4,7 +4,7 @@ checkpoints
 results
 logs
 *.traj
-experimental
+# experimental
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
